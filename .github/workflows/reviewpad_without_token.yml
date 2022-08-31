@@ -7,6 +7,7 @@ permissions:
 
 # List of events that will trigger reviewpad
 on:
+  push:
   pull_request:
   pull_request_target:
     types:
