@@ -11,3 +11,6 @@ jobs:
     steps:
       - name: MergeBot
         uses: ferreiratiago/mba@v0.0.1
+        with:
+          condition: "true"
+          token: ${{ secrets.REVIEWPAD_TOKEN }}
