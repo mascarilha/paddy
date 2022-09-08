@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Reviewpad
-        uses: reviewpad/action@v3.x
+        uses: reviewpad/action@libgit2
         with:
           # Use a default configuration file.
           # Remove next line if you want to add your own configuration.
