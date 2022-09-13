@@ -2,8 +2,7 @@
 name: Reviewpad
 
 on:
-  issue_comment:
-    types: [created]
+  pull_request:
 
 jobs:
   reviewpad_job:
