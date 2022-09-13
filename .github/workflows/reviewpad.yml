@@ -7,7 +7,6 @@ on:
 jobs:
   reviewpad_job:
     name: Reviewpad
-    if: ${{ startsWith(github.event.comment.body, '/reviewpad merge') }}
     runs-on: ubuntu-latest
     steps:
       - name: Reviewpad
