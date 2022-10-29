@@ -1,8 +1,8 @@
 api-version: reviewpad.com/v3.x
 
 workflows:
-  - name: assign-reviewers
+  - name: add-label
     if:
       - "true"
     then:
-      - $assignReviewer(["marcelosousa", "padawancat"], 1)
+      - $addLabel("ok")
