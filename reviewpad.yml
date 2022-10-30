@@ -5,4 +5,4 @@ workflows:
     if:
       - "true"
     then:
-      - $addLabel("ok")
+      - $addLabel("github-app-stage")
