@@ -1,8 +1,0 @@
-api-version: reviewpad.com/v3.x
-
-workflows:
-  - name: add-label
-    if:
-      - "true"
-    then:
-      - $addLabel("github-app-stage")
