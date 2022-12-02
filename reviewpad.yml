@@ -1,0 +1,22 @@
+api-version: reviewpad.com/v3.x
+
+workflows:
+  - name: hello-world
+    always-run: true
+    on:
+      - issue
+    if: 
+      - rule: "true"
+        extra-actions:
+         - $comment("Hello World!")
+  - name: manage-issues-in-projects
+    always-run: true
+    on:
+      - issue
+    if:
+      - rule: $state() == "open" && !$isLinkedToProject("Reviewpad")
+        extra-actions:
+          - $addToProject("Reviewpad", "Backlog")")
+      - rule: $state() == "closed"
+        extra-actions:
+          - $addToProject("Reviewpad", "Done")
